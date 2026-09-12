@@ -91,7 +91,7 @@ Using my colab pro subscription, I created a colab ipynb to train the AI. B/c yo
 **Total Time Spent: 6.5 hours**
 
 # June 25: Results
-I woke up at 6 to look at the results. They were average or like okay. It was good at identifying squirrels, but it was over aggressive. It identified rocks and cats as squirrels and I wouldn't want to spray my neighbors cats. I reworked the model to make it a little less aggressive (will train tommorow). I also grabbed extra training images for that purpose (dog + cat + human images + rock images) this way it won't spray like anything moving. Boy did the images take forever.
+I woke up at 6 to look at the results. They were average or like okay. It was good at identifying squirrels, but it was over aggressive. It identified rocks and cats as squirrels and I wouldn't want to spray my neighbors cats. I reworked the model to make it a little less aggressive (will train tommorow). I also grabbed extra training images for that purpose (dog + cat + human images + rock images) this way it won't spray like anything moving. Boy did the images take forever. I tried a few images of my backyard using the pi 3 camera but not like live.
 
 **Total Time spent: 10 hours**
 
@@ -115,5 +115,5 @@ Bambu labs is having a july 4th sale and the h2d is like 30% off. Maybe I'll get
 
 # July 20th: I missed the end date.
 
-I missed the end date of the sale... :( :( :(, maybe I'll try black friday. Its okay though, I did some research on my Hailo raspberry pi npu and was able to run the AI model that knows and can identify basically every object. It did 20 fps fine.
-**Total Time Spent: 2 hours**
+I missed the end date of the sale... :( :( :(, maybe I'll try black friday. Its okay though, I did some research on my Hailo raspberry pi npu and was able to run the AI model that knows and can identify basically every object. It did 20 fps fine. It hit a few bugs with a wrong version and my npu being an old model but I used the newest sofware.
+**Total Time Spent: 3 hours**
