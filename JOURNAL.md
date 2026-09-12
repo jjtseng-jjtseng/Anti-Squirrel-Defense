@@ -119,6 +119,9 @@ I won't be able to work on it for about a month while I go on vacation. I got th
 
 Bambu labs is having a july 4th sale and the h2d is like 30% off. Maybe I'll get it. Contemplating and researchign other options. B/c I might also use the 3d printer for other projects. Still on vacation though, so won't have time.
 
+<img src="imagesjournal/4thjulysale.png" width="300" alt="Product Screenshot">
+
+
 **Total Time spent: 1 hours**
 
 # July 20th: I missed the end date.
