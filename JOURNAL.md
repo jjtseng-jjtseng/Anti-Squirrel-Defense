@@ -9,11 +9,13 @@ created_at: "2026-05-01"
 
 Squirrels got into the strawberries in my garden--normal defenses don't work--so maybe I should do something about it. I recently bought a rapsberry pi 5 and heard that it can run AI algorithms on it.
 
+
 **Total Time Spent: 0.25 hours**
 
 # May 05: Further Researched Idea:
 
 I was busy with an Algerbra test. When I was ready, I found out that there were companies who make squirrel/pest/dear detectors and like turn on lights. They don't seem to be super effective though, based on the reviews.
+![Product Screenshot](imagesjournal/badproducts.png)
 
 **Total Time Spent: 0.5 hours**
 
