@@ -23,15 +23,14 @@ I was busy with an Algerbra test. When I was ready, I found out that there were 
 # May 16: Project AI model decisions
 
 I spent this saturday researching what kind of AI model I would use. I've had previous experience with YOLO models (You Only Look Once) for a science fair project. I'll work on the AI dataset first. After research, I only found one small squirrel dataset.
-
-<img src="imagesjournal/YOLO.png" width="300" alt="Product Screenshot">
+<img src="imagesjournal/YOLO.png" width="400" alt="Product Screenshot">
 
 **Total Time Spent: 1 hours**
 
 # May 17: AI labeling I
 
 It turns out the dataset i found was unlabled. I started compiling more pictures for future labeling, using images from my backyard and online. I'll use label studio on a mac for labeling later. The dataset has 100 images, I think I'll probably need a 1000. Total: 234/1000 images. 
-<img src="imagesjournal/squirrelgithubdataset.png" width="300" alt="Product Screenshot">
+<img src="imagesjournal/squirrelgithubdataset.png" width="400" alt="Product Screenshot">
 
 **Total Time Spent: 2 hours**
 
