@@ -50,7 +50,7 @@ After some consideration, I don't think I'll need 1000 images, the 850 I have wi
 # May 25: Labeling V
 
 labeling takes even longer than finding the images. Only got 250 done but the whole day is over.
-![Labels Screenshot](./images/labels.png)
+![Labels Screenshot](./imagesjournal/labels.png)
 
 **Total Time Spent: 7.25 hours**
 
