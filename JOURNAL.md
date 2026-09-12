@@ -16,7 +16,7 @@ Squirrels got into the strawberries in my garden--normal defenses don't work--so
 # May 05: Further Researched Idea:
 
 I was busy with an Algerbra test. When I was ready, I found out that there were companies who make squirrel/pest/dear detectors and like turn on lights. They don't seem to be super effective though, based on the reviews.
-![Product Screenshot](imagesjournal/badproducts.png)
+<img src="imagesjournal/badproducts.png" width="300" alt="Product Screenshot">
 
 **Total Time Spent: 0.5 hours**
 
@@ -53,7 +53,7 @@ After some consideration, I don't think I'll need 1000 images, the 850 I have wi
 # May 25: Labeling V
 
 labeling takes even longer than finding the images. Only got 250 done but the whole day is over.
-![Labels Screenshot](imagesjournal/labels.png)
+<img src="imagesjournal/labels.png" width="300" alt="Product Screenshot">
 
 **Total Time Spent: 7.25 hours**
 
