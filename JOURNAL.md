@@ -90,7 +90,7 @@ I spent basically the whole time going through labels again. Fixed missing tails
 
 Split the dataset for training/validation and got the YOLO11 training stuff working. I picked the smallest YOLO11 model first because the final thing has to run on a raspberry pi + npu, so using a huge model just because I can train it would kind of defeat the point.
 
-![Training setup](imagesjournal/colabscreenshot.png)
+![First training](imagesjournal/colabscreenshot3.png)
 
 **Total Time Spent: 4 hours**
 
@@ -98,7 +98,7 @@ Split the dataset for training/validation and got the YOLO11 training stuff work
 
 Ran the first actual long training with the smallest YOLO11 model. It definitely learned squirrels and the results looked pretty good at first, but the mAP50-95 ended up around 60%. Not horrible, but I was hoping it would be a lot better after all the labeling.
 
-![First training](imagesjournal/colabscreenshot2.png)
+![Training setup](imagesjournal/colabscreenshot2.png)
 
 **Total Time Spent: 3 hours**
 
@@ -114,7 +114,7 @@ Went through the model predictions instead of just looking at the final number. 
 
 I researched segmentation models because then I can outline the actual squirrel instead of making a box around it. This sounded way better especially for the tail. The problem is I realized I have to RELABEL basically everything with drawing (well techinically you could also do dots and connect them, but like same thing) instead of boxes. I already started so I guess I'm doing it now.
 
-![Segmentation](imagesjournal/placeholder.png)
+![Segmentation](imagesjournal/screenshotsquirrel2segemetnation.png)
 
 **Total Time Spent: 5 hours**
 
@@ -122,7 +122,7 @@ I researched segmentation models because then I can outline the actual squirrel 
 
 This is so much slower than bounding boxes. For every squirrel I have to click around the body/tail and it gets really annoying around fur, leaves, branches, etc. I did a lot today but I'm definitely not finishing this in one or two days.
 
-![Segmentation labels](imagesjournal/placeholder.png)
+![Segmentation labels](imagesjournal/screenshotsquirrel3segmentation.png)
 
 **Total Time Spent: 8 hours**
 
@@ -130,7 +130,7 @@ This is so much slower than bounding boxes. For every squirrel I have to click a
 
 More segmentation. I started getting faster but the squirrels that are behind branches are really annoying because I have to decide if I outline only what I can see or try to connect around it. I decided to mostly label what is actually visible so at least I'm consistent. and don't get me started on the tails.
 
-![More segmentation](imagesjournal/placeholder.png)
+![More segmentation](imagesjournal/screenshotlabelstudioimagesall2.png)
 
 **Total Time Spent: 8 hours**
 
@@ -138,7 +138,7 @@ More segmentation. I started getting faster but the squirrels that are behind br
 
 Still doing this. Tails are by far the worst part because they can be fluffy and there isn't even a super clear edge sometimes. I went back through some of my old masks too because the first ones were a lot rougher than what I was doing now. I realized that my strategy becomes more and more loose the more I do. maybe I'm just that lazy.
 
-![Segmentation day 3](imagesjournal/placeholder.png)
+![Segmentation day 3](imagesjournal/sscreenshotsquirrel1segmentation.png)
 
 **Total Time Spent: 6 hours**
 
@@ -146,7 +146,7 @@ Still doing this. Tails are by far the worst part because they can be fluffy and
 
 I finally got through most of it and then spent time checking the masks. Found a few completely messed up ones where I forgot the label the second squirrel(s) in the picture. Fixed those and exported it so YOLO wouldn't get super confused. I had to like limit my daily computer time.
 
-![Segmentation dataset](imagesjournal/placeholder.png)
+![Segmentation dataset](imagesjournal/screenshotlabelstudioimagesall.png)
 
 **Total Time Spent: 5 hours**
 
@@ -154,7 +154,7 @@ I finally got through most of it and then spent time checking the masks. Found a
 
 I trained the segmentation model and after ALL that relabeling it was only like 65-70% mAP50-95 depending on the run. So yes its better than 60%, but not enough for how much more work it took. The masks also looked kinda weird on tails/squirrels behind stuff.
 
-![Segmentation results](imagesjournal/placeholder.png)
+![Segmentation results](imagesjournal/colabscreenshot.png)
 
 **Total Time Spent: 4 hours**
 
