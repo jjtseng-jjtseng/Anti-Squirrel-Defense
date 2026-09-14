@@ -52,7 +52,7 @@ It turns out that reddit and other social media outlets are a good place to find
 
 # May 24: AI Labeling IV
 
-After some consideration, I don't think I'll need 1000 images, the 850 I have will probably be enough. I got another 350 today, but spent too much time getting it. It turns out theres a limited amount of unique images.
+After some consideration, I don't think I'll need 1000 images, the 850 I have will probably be enough. I got another 350 today, but spent too much time getting it. It turns out theres a limited amount[...]
 
 **Total Time Spent: 5 hours**
 
@@ -72,7 +72,7 @@ Finished another 300 today (more efficiently then before) but will be busy for t
 
 # May 31: Labeling VII
 
-Remember how I said that there wasn't any labels for the online dataset I found? I turns out there was (plus another 100 images) but it was under another different github page. But like some of them are duplicates.
+Remember how I said that there wasn't any labels for the online dataset I found? I turns out there was (plus another 100 images) but it was under another different github page. But like some of them a[...]
 
 **Total Time spent: 5.5 hours**
 
@@ -88,7 +88,7 @@ I created a simple appliation using python that lets me sort through weather or 
 **Total Time spent: 5 hours**
 
 # June 22: Prime day is coming
-I realized that Prime day is coming up so I should buy everything I can during this time period. I researched what I should get. I ended up buying an $150 npu for my pi 5 this way it could actually do inference.
+I realized that Prime day is coming up so I should buy everything I can during this time period. I researched what I should get. I ended up buying an $150 npu for my pi 5 this way it could actually do[...]
 
 **Total Time Spent: 3 hours**
 
@@ -97,18 +97,18 @@ I placed the orders today.
 **Total Time Spent: 0.25 hours**
 
 # June 24: AI ipynb
-Using my colab pro subscription, I created a colab ipynb to train the AI. B/c you can't possible train an ai model on your own computer. I selected the A100 GPU (which would've costed me 30k if I bought it).
+Using my colab pro subscription, I created a colab ipynb to train the AI. B/c you can't possible train an ai model on your own computer. I selected the A100 GPU (which would've costed me 30k if I boug[...]
 
 **Total Time Spent: 6.5 hours**
 
 # June 25: Results
-I woke up at 6 to look at the results. They were average or like okay. It was good at identifying squirrels, but it was over aggressive. It identified rocks and cats as squirrels and I wouldn't want them to get sprayed.
+I woke up at 6 to look at the results. They were average or like okay. It was good at identifying squirrels, but it was over aggressive. It identified rocks and cats as squirrels and I wouldn't want t[...]
 
 **Total Time spent: 10 hours**
 
 # June 27: Fun updates
 
-It turns out I've been spending too much time in front of my computer and I need stronger glasses. LOL. The shipments also arrived, I took them out, made sure that each of the servos, batteries, and parts work correctly.
+It turns out I've been spending too much time in front of my computer and I need stronger glasses. LOL. The shipments also arrived, I took them out, made sure that each of the servos, batteries, and p[...]
 
 **Total Time spent: 4 hours**
 
@@ -120,7 +120,7 @@ I won't be able to work on it for about a month while I go on vacation. I got th
 
 # July 6th: 3d printer?
 
-Bambu labs is having a july 4th sale and the h2d is like 30% off. Maybe I'll get it. Contemplating and researchign other options. B/c I might also use the 3d printer for other projects. Still on vacation.
+Bambu labs is having a july 4th sale and the h2d is like 30% off. Maybe I'll get it. Contemplating and researchign other options. B/c I might also use the 3d printer for other projects. Still on vacat[...]
 
 ![Product Screenshot](imagesjournal/4thjulysale.png)
 
@@ -128,6 +128,6 @@ Bambu labs is having a july 4th sale and the h2d is like 30% off. Maybe I'll get
 
 # July 20th: I missed the end date.
 
-I missed the end date of the sale... :( :( :(, maybe I'll try black friday. Its okay though, I did some research on my Hailo raspberry pi npu and was able to run the AI model that knows and can identify squirrels.
+I missed the end date of the sale... :( :( :(, maybe I'll try black friday. Its okay though, I did some research on my Hailo raspberry pi npu and was able to run the AI model that knows and can identi[...]
 
 **Total Time Spent: 3 hours**
