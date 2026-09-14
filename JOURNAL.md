@@ -154,7 +154,7 @@ I finally got through most of it and then spent time checking the masks. Found a
 
 I trained the segmentation model and after ALL that relabeling it was only like 65-70% mAP50-95 depending on the run. So yes its better than 60%, but not enough for how much more work it took. The masks also looked kinda weird on tails/squirrels behind stuff.
 
-![Segmentation results](imagesjournal/colabscreenshot1.png)
+![Segmentation results](imagesjournal/colabscreenshot.png)
 
 **Total Time Spent: 4 hours**
 
