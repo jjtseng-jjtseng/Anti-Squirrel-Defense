@@ -50,7 +50,7 @@ Downloaded a bunch more pictures and started sorting out the bad ones. There wer
 
 Started labeling the squirrel pictures with boxes. It isn't difficult but it takes FOREVER when you have this many. The tail also makes the boxes kind of weird b/c sometimes the actual squirrel takes up only part of the rectangle. Still just doing normal detection for now though.
 
-![Bounding boxes](imagesjournal/screenshotlabelstudioinfp.png)
+![Bounding boxes](imagesjournal/screenshotloginlabelstudio.png)
 
 **Total Time Spent: 4 hours**
 
@@ -90,7 +90,7 @@ I spent basically the whole time going through labels again. Fixed missing tails
 
 Split the dataset for training/validation and got the YOLO11 training stuff working. I picked the smallest YOLO11 model first because the final thing has to run on a raspberry pi + npu, so using a huge model just because I can train it would kind of defeat the point.
 
-![Training setup](imagesjournal/placeholder.png)
+![Training setup](imagesjournal/colabscreenshot.png)
 
 **Total Time Spent: 4 hours**
 
@@ -98,7 +98,7 @@ Split the dataset for training/validation and got the YOLO11 training stuff work
 
 Ran the first actual long training with the smallest YOLO11 model. It definitely learned squirrels and the results looked pretty good at first, but the mAP50-95 ended up around 60%. Not horrible, but I was hoping it would be a lot better after all the labeling.
 
-![First training](imagesjournal/placeholder.png)
+![First training](imagesjournal/colabscreenshot2.png)
 
 **Total Time Spent: 3 hours**
 
@@ -106,7 +106,7 @@ Ran the first actual long training with the smallest YOLO11 model. It definitely
 
 Went through the model predictions instead of just looking at the final number. It seems okay when the squirrel is obvious, but worse if its small, behind leaves, or kind of blends into a tree. The tail/background thing with the rectangle also still looked weird in some pictures. Messed around with the parameters.
 
-![Bad predictions](imagesjournal/placeholder.png)
+![Bad predictions](imagesjournal/screenshotlabelstudioinfp.png)
 
 **Total Time Spent: 4 hours**
 
