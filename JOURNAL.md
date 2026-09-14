@@ -10,7 +10,7 @@ created_at: "2026-05-01"
 Squirrels got into the strawberries in my garden--normal defenses don't work--so maybe I should do something about it. I recently bought a rapsberry pi 5 and heard that it can run AI algorithms on it.
 
 ![Strawberries](imagesjournal/strawberry.jpg)
-![Strawberries](imagesjournal/squirrel.jpg)
+![Strawberries](imagesjournal/squirrel.JPG)
 
 **Total Time Spent: 0.25 hours**
 
