@@ -103,7 +103,7 @@ Ran the first actual long training with the smallest YOLO11 model. It definitely
 
 # June 02: Why is it only like 60%?
 
-Went through the model predictions instead of just looking at the final number. It seems okay when the squirrel is obvious, but worse if its small, behind leaves, or kind of blends into a tree. The tail/background thing with the rectangle also still looked weird in some pictures.
+Went through the model predictions instead of just looking at the final number. It seems okay when the squirrel is obvious, but worse if its small, behind leaves, or kind of blends into a tree. The tail/background thing with the rectangle also still looked weird in some pictures. Messed around with the parameters.
 
 ![Bad predictions](imagesjournal/placeholder.png)
 
@@ -111,7 +111,7 @@ Went through the model predictions instead of just looking at the final number. 
 
 # June 04: Maybe segmentation is better
 
-I researched segmentation models because then I can outline the actual squirrel instead of making a box around it. This sounded way better especially for the tail. The problem is I realized I have to RELABEL basically everything with polygons instead of boxes. I already started so I guess I'm doing it now.
+I researched segmentation models because then I can outline the actual squirrel instead of making a box around it. This sounded way better especially for the tail. The problem is I realized I have to RELABEL basically everything with drawing (well techinically you could also do dots and connect them, but like same thing) instead of boxes. I already started so I guess I'm doing it now.
 
 ![Segmentation](imagesjournal/placeholder.png)
 
@@ -123,31 +123,31 @@ This is so much slower than bounding boxes. For every squirrel I have to click a
 
 ![Segmentation labels](imagesjournal/placeholder.png)
 
-**Total Time Spent: 5 hours**
+**Total Time Spent: 8 hours**
 
 # June 08: segmentation labeling day 2
 
-More segmentation. I started getting faster but the squirrels that are behind branches are really annoying because I have to decide if I outline only what I can see or try to connect around it. I decided to mostly label what is actually visible so at least I'm consistent.
+More segmentation. I started getting faster but the squirrels that are behind branches are really annoying because I have to decide if I outline only what I can see or try to connect around it. I decided to mostly label what is actually visible so at least I'm consistent. and don't get me started on the tails.
 
 ![More segmentation](imagesjournal/placeholder.png)
 
-**Total Time Spent: 5 hours**
+**Total Time Spent: 8 hours**
 
 # June 10: segmentation labeling day 3
 
-Still doing this. Tails are by far the worst part because they can be fluffy and there isn't even a super clear edge sometimes. I went back through some of my old masks too because the first ones were a lot rougher than what I was doing now.
+Still doing this. Tails are by far the worst part because they can be fluffy and there isn't even a super clear edge sometimes. I went back through some of my old masks too because the first ones were a lot rougher than what I was doing now. I realized that my strategy becomes more and more loose the more I do. maybe I'm just that lazy.
 
 ![Segmentation day 3](imagesjournal/placeholder.png)
 
-**Total Time Spent: 4 hours**
+**Total Time Spent: 6 hours**
 
 # June 12: Finished most of the segmentation dataset
 
-I finally got through most of it and then spent time checking the masks. Found a few completely messed up polygons and some where I accidentally included part of a branch. Fixed those and exported it so YOLO could actually use the segmentation labels.
+I finally got through most of it and then spent time checking the masks. Found a few completely messed up ones where I forgot the label the second squirrel(s) in the picture. Fixed those and exported it so YOLO wouldn't get super confused. I had to like limit my daily computer time.
 
 ![Segmentation dataset](imagesjournal/placeholder.png)
 
-**Total Time Spent: 3.5 hours**
+**Total Time Spent: 5 hours**
 
 # June 14: trained segmentation... not that much better
 
@@ -183,7 +183,7 @@ Went back to the original bounding box dataset and tried just using a bigger YOL
 
 # June 20: messed with training settings basically all day
 
-Since the bigger model actually worked, I spent most of today changing parameters and retraining. Tried image size, augmentations, epochs/patience, and some other settings. Some made it worse. Some made it like 1-2% better. There is probably a point where I should stop doing this lol.
+Since the bigger model actually worked, I spent most of today changing parameters and retraining. Tried image size, augmentations, epochs/patience, and some other settings. Some made it worse. Some made it like 1-2% better. I'm gonna crashout b/c of the time I spent on this.
 
 ![Parameter testing](imagesjournal/placeholder.png)
 
@@ -227,7 +227,7 @@ Since I'm in Asia I went to one of those huge computer/electronics stores becaus
 
 ![Computer store](imagesjournal/placeholder.png)
 
-**Total Time Spent: 5 hours**
+**Total Time Spent: 5.5 hours**
 
 # July 26: figuring out what I actually bought
 
@@ -275,11 +275,11 @@ Looked at the NPU load/performance and I don't think running the extra depth mod
 
 ![NPU testing](imagesjournal/placeholder.png)
 
-**Total Time Spent: 1.5 hours**
+**Total Time Spent: 1.55 hours**
 
 # August 9: Random arduino attempt
 
-Tried working an arduino into the project for controlling the pump/physical stuff. After setting it up I realized this is kind of useless because then I need the pi to talk to the arduino just so the arduino can do something the pi can already tell a control circuit to do. Removed it again.
+Tried working an arduino into the project for controlling the pump/physical stuff. After setting it up I realized this is kind of useless because then I need the pi to talk to the arduino just so the arduino can do something the pi can already tell a control circuit to do. Removed it again. The ram of the arduino is literally 0.0000038x of my pi's, and the cpu of the pi is 31.25x, while the storage of the arduino is is 0.000001x. Like I did the actual math + research for 10 usless minutes.
 
 ![Arduino](imagesjournal/placeholder.png)
 
@@ -335,7 +335,7 @@ After traveling I had to unpack everything and set the project up again. Checked
 
 # August 27: actual water + AI test
 
-Connected the water side again and tested the AI trigger with it. I used short bursts because I did not want to soak the electronics while debugging. The basic idea works, although where the camera sees the squirrel vs where the water goes obviously isn't perfectly matched yet.
+Connected the water side again and tested the AI trigger with it. I used short bursts because I did not want to soak the electronics while debugging. The basic idea works, although where the camera sees the squirrel vs where the water goes obviously isn't perfectly matched yet. I heard that if you drop a lithium ion battery in water it becomes a grenade (with two explosions). Also school is going to start soon and I won't be able to work on it as much.
 
 ![Water AI test](imagesjournal/placeholder.png)
 
@@ -359,38 +359,14 @@ Changed the confidence threshold and how many frames it needs to see a squirrel 
 
 # September 6: aiming
 
-Worked more on where the camera/water nozzle should point. The AI gives me where the squirrel is in the image, but that doesn't magically mean the water goes exactly there. For now I'm making sure it covers the area I actually care about instead of trying to build a super complicated turret too.
+Worked more on where the camera/water nozzle should point. The AI gives me where the squirrel is in the image, but that doesn't magically mean the water goes exactly there. For now I'm making sure it covers the area I actually care about instead of trying to build a super complicated turret too. School started.
 
 ![Aiming](imagesjournal/placeholder.png)
 
 **Total Time Spent: 1 hours**
 
-# September 9: cleaned up the build
+# September 14: Almost done
 
-Moved wires around, secured some stuff, and tried to make it less like a raspberry pi with 500 random wires coming out of it. Also checked that the fan still had room and that the water tubing wasn't sitting right over the electronics.
+I think I'm almost done. I should've gotten the 3d printer. I could like 3d print like a cool tank shell to keep water out while spraying squirrels. I'll keep working on the servos. I'll finish up within a week or so. I should hurry before the squirrels start hibernating but school is also busy.
 
-![Build cleanup](imagesjournal/placeholder.png)
-
-**Total Time Spent: 1 hours**
-
-# September 12: full test
-
-Ran the whole thing together from startup: camera, Hailo, squirrel model, detection logic, output, pump, cooldown, etc. Fixed a couple small issues that only happened when everything was running at once. It is basically the finished system now.
-
-![Full test](imagesjournal/placeholder.png)
-
-**Total Time Spent: 1.5 hours**
-
-# September 14: done
-
-Went back through the project files/pictures and finished the journal. The final thing changed a LOT from the first plan, especially wasting forever on segmentation and then finding out a bigger normal YOLO model worked better. Also RIP the Bambu sale. Maybe black friday lol.
-
-![Finished project](imagesjournal/placeholder.png)
-
-**Total Time Spent: 0.25 hours**
-
----
-
-# Total Project Time:
-
-**131 hours**
+**total Time spent: 2 hours**
