@@ -154,7 +154,7 @@ I finally got through most of it and then spent time checking the masks. Found a
 
 I trained the segmentation model and after ALL that relabeling it was only like 65-70% mAP50-95 depending on the run. So yes its better than 60%, but not enough for how much more work it took. The masks also looked kinda weird on tails/squirrels behind stuff.
 
-![Segmentation results](imagesjournal/colabscreenshot.png)
+![Segmentation results](imagesjournal/colabscreenshot1.png)
 
 **Total Time Spent: 4 hours**
 
@@ -162,7 +162,7 @@ I trained the segmentation model and after ALL that relabeling it was only like 
 
 Looked through a ton of the segmentation outputs. I think squirrel fur is just kind of a terrible exact edge to label, plus branches cover random sections and my polygons probably aren't perfectly consistent. Also when the squirrel is small in the image, the exact outline probably matters less anyway.
 
-![Mask problems](imagesjournal/placeholder.png)
+![Mask problems](imagesjournal/aioutputs2.png)
 
 **Total Time Spent: 3 hours**
 
@@ -170,7 +170,7 @@ Looked through a ton of the segmentation outputs. I think squirrel fur is just k
 
 Changed some of the training settings and ran it again because I didn't want all the segmentation work to be useless. It moved around a little but it still wasn't some giant improvement. At this point I think the problem isn't just "boxes bad, segmentation good."
 
-![Second segmentation run](imagesjournal/placeholder.png)
+![Second segmentation run](imagesjournal/colabscreenshot.png)
 
 **Total Time Spent: 4 hours**
 
@@ -178,7 +178,7 @@ Changed some of the training settings and ran it again because I didn't want all
 
 Went back to the original bounding box dataset and tried just using a bigger YOLO11 model. This is kind of stupid but it worked way better almost immediately. I got close to 80% mAP50-95 without having to use the segmentation dataset at all.
 
-![Bigger model](imagesjournal/placeholder.png)
+![Bigger model](imagesjournal/aioutputs1.png)
 
 **Total Time Spent: 3 hours**
 
@@ -186,7 +186,7 @@ Went back to the original bounding box dataset and tried just using a bigger YOL
 
 Since the bigger model actually worked, I spent most of today changing parameters and retraining. Tried image size, augmentations, epochs/patience, and some other settings. Some made it worse. Some made it like 1-2% better. I'm gonna crashout b/c of the time I spent on this.
 
-![Parameter testing](imagesjournal/placeholder.png)
+![Parameter testing](imagesjournal/aioutputs3.png)
 
 **Total Time Spent: 5 hours**
 
