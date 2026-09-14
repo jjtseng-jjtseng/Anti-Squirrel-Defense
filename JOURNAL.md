@@ -9,7 +9,8 @@ created_at: "2026-05-01"
 
 Squirrels got into the strawberries in my garden--normal defenses don't work--so maybe I should do something about it. I recently bought a rapsberry pi 5 and heard that it can run AI algorithms on it.
 
-![Strawberries](imagesjournal/placeholder.png)
+![Strawberries](imagesjournal/strawberry.jpg)
+![Strawberries](imagesjournal/squirrel.jpg)
 
 **Total Time Spent: 0.25 hours**
 
@@ -17,7 +18,7 @@ Squirrels got into the strawberries in my garden--normal defenses don't work--so
 
 I was busy with an Algerbra test. When I was ready, I found out that there were companies who make squirrel/pest/dear detectors and like turn on lights. They don't seem to be super effective though, based on the reviews.
 
-![Research](imagesjournal/placeholder.png)
+![Research](imagesjournal/badproducts.png)
 
 **Total Time Spent: 0.5 hours**
 
@@ -25,7 +26,7 @@ I was busy with an Algerbra test. When I was ready, I found out that there were 
 
 I spent this saturday researching what kind of AI model I would use. I've had previous experience with YOLO models (You Only Look Once) for a science fair project. I'll work on the AI dataset first. After that I can worry about getting it to actually run on the raspberry pi.
 
-![YOLO research](imagesjournal/placeholder.png)
+![YOLO research](imagesjournal/YOLO.png)
 
 **Total Time Spent: 2 hours**
 
@@ -33,7 +34,7 @@ I spent this saturday researching what kind of AI model I would use. I've had pr
 
 I looked around for squirrel datasets and also just normal pictures online. There are a lot of squirrel pictures, but a bunch are like perfect close up photography which is probably not what my camera will see. I tried to get different distances/backgrounds and also pictures where they are partly behind something.
 
-![Squirrel pictures](imagesjournal/placeholder.png)
+![Squirrel pictures](imagesjournal/squirrelgithubdataset.png)
 
 **Total Time Spent: 2 hours**
 
@@ -41,7 +42,7 @@ I looked around for squirrel datasets and also just normal pictures online. Ther
 
 Downloaded a bunch more pictures and started sorting out the bad ones. There were duplicates, drawings, really tiny images, and random stuff that wasn't useful. I also need empty/background images eventually b/c I don't want it to just assume every picture has a squirrel in it.
 
-![Dataset](imagesjournal/placeholder.png)
+![Dataset](imagesjournal/googlesearchsq.png)
 
 **Total Time Spent: 3 hours**
 
@@ -49,7 +50,7 @@ Downloaded a bunch more pictures and started sorting out the bad ones. There wer
 
 Started labeling the squirrel pictures with boxes. It isn't difficult but it takes FOREVER when you have this many. The tail also makes the boxes kind of weird b/c sometimes the actual squirrel takes up only part of the rectangle. Still just doing normal detection for now though.
 
-![Bounding boxes](imagesjournal/placeholder.png)
+![Bounding boxes](imagesjournal/screenshotlabelstudioinfp.png)
 
 **Total Time Spent: 4 hours**
 
@@ -57,7 +58,7 @@ Started labeling the squirrel pictures with boxes. It isn't difficult but it tak
 
 Did basically the same thing again. I noticed some of my first boxes were way looser than the new ones, so I went back and fixed a bunch because I don't want the AI learning random tree/background with the squirrel. I think I am getting faster at it at least.
 
-![More labels](imagesjournal/placeholder.png)
+![More labels](imagesjournal/screenshotlabelstudioimagesall.png)
 
 **Total Time Spent: 4 hours**
 
@@ -65,7 +66,7 @@ Did basically the same thing again. I noticed some of my first boxes were way lo
 
 Finished another chunk of the labels and checked the pictures again. Some had squirrels that were so small I could barely find them, and a few had multiple squirrels. I kept some of the hard ones because thats probably more realistic than only training on the easiest pictures.
 
-![Dataset cleanup](imagesjournal/placeholder.png)
+![Dataset cleanup](imagesjournal/screenshotsquirrel.png)
 
 **Total Time Spent: 3.5 hours**
 
@@ -73,7 +74,7 @@ Finished another chunk of the labels and checked the pictures again. Some had sq
 
 Took/collected some normal background pictures too and kept labeling. My thinking is if the final camera is looking at grass, plants, wood, etc. all day, the model should see stuff like that without a squirrel too. I don't know how much it'll help yet but it makes sense.
 
-![Garden backgrounds](imagesjournal/placeholder.png)
+![Garden backgrounds](imagesjournal/screenshotsquirrel2.png)
 
 **Total Time Spent: 4.5 hours**
 
@@ -81,7 +82,7 @@ Took/collected some normal background pictures too and kept labeling. My thinkin
 
 I spent basically the whole time going through labels again. Fixed missing tails, boxes that had way too much background, and a few pictures that I somehow forgot to label at all. This took way longer than I thought when I started the dataset.
 
-![Finished labels](imagesjournal/placeholder.png)
+![Finished labels](imagesjournal/screenshotsquirrel3.png)
 
 **Total Time Spent: 4.5 hours**
 
