@@ -305,7 +305,7 @@ Worked on the pump separately so I wasn't spraying water every time the AI code 
 
 Started connecting more of the actual system together instead of having separate camera/AI/pump tests. I still kept the water disconnected for a lot of it. Added the basic logic where detections can trigger an output after it sees the squirrel consistently instead of one random frame.
 
-![Electronics wiring](imagesjournal/random_electronic.png)
+![Full system wiring outside](imagesjournal/fullsetupoutsideaftersq.png)
 
 **Total Time Spent: 2 hours**
 
@@ -313,7 +313,7 @@ Started connecting more of the actual system together instead of having separate
 
 Tried figuring out how everything is supposed to fit in a case. The problem is the pi + npu want airflow, but the project also has water literally next to it. I messed around with layouts where the electronics are covered and the camera/tubing can stick out without blocking the fan.
 
-![Camera and electronics enclosure](imagesjournal/camera+boxonlyone.png)
+![Camera waterproofing problem](imagesjournal/wetpicamerabcsquirrel.png)
 
 **Total Time Spent: 1.5 hours**
 
@@ -329,7 +329,7 @@ Camera -> AI -> squirrel result -> trigger logic is working together now. I adde
 
 After traveling I had to unpack everything and set the project up again. Checked the camera/npu/pi and all the random wires I bought, then replaced a couple really sketchy temporary connections. Somehow nothing important broke in my luggage so thats good.
 
-![Unpacked project parts](imagesjournal/amazonpackage.png)
+![Suitcase with wires and project parts after traveling](imagesjournal/suitcasecomingbackwithwires.png)
 
 **Total Time Spent: 1 hours**
 
@@ -337,7 +337,7 @@ After traveling I had to unpack everything and set the project up again. Checked
 
 Connected the water side again and tested the AI trigger with it. I used short bursts because I did not want to soak the electronics while debugging. The basic idea works, although where the camera sees the squirrel vs where the water goes obviously isn't perfectly matched yet. I heard that if you drop a lithium ion battery in water it becomes a grenade (with two explosions). Also school is going to start soon and I won't be able to work on it as much.
 
-![Pump and water test](imagesjournal/pump.png)
+![Full setup with water source](imagesjournal/fullsetupwithwaterbucketinviewoutsideaftersq.png)
 
 **Total Time Spent: 2 hours**
 
@@ -345,7 +345,7 @@ Connected the water side again and tested the AI trigger with it. I used short b
 
 Put/tested it in a more realistic spot instead of on my desk. Outside is WAY messier for the model. Leaves move, shadows change, and there are random shapes everywhere. I got a few weird detections so I wrote down what happened and started changing the confidence/trigger rules.
 
-![Outdoor squirrel target](imagesjournal/squirrel.JPG)
+![Outdoor strawberry area after testing](imagesjournal/squirrelareaiswetdirtmovedstrawberrypotaftermath.png)
 
 **Total Time Spent: 2 hours**
 
