@@ -105,7 +105,7 @@ Ran the first actual long training with the smallest YOLO11 model. It definitely
 
 Went through the model predictions instead of just looking at the final number. It seems okay when the squirrel is obvious, but worse if its small, behind leaves, or kind of blends into a tree. The tail/background thing with the rectangle also still looked weird in some pictures. Messed around with the parameters.
 
-![Prediction problems](imagesjournal/screenshotlabelstudioinfp.png)
+![Low-accuracy YOLO confusion matrix](imagesjournal/confusionmatrixlowaccuracy60v1ai.png)
 
 **Total Time Spent: 4 hours**
 
@@ -177,7 +177,7 @@ Changed some of the training settings and ran it again because I didn't want all
 
 Went back to the original bounding box dataset and tried just using a bigger YOLO11 model. This is kind of stupid but it worked way better almost immediately. I got close to 80% mAP50-95 without having to use the segmentation dataset at all.
 
-![Larger detection model results](imagesjournal/aioutputs1.png)
+![Improved model detecting a squirrel at 0.85 confidence](imagesjournal/68f2b00e8c857e49.jpg)
 
 **Total Time Spent: 3 hours**
 
@@ -185,7 +185,7 @@ Went back to the original bounding box dataset and tried just using a bigger YOL
 
 Since the bigger model actually worked, I spent most of today changing parameters and retraining. Tried image size, augmentations, epochs/patience, and some other settings. Some made it worse. Some made it like 1-2% better. I'm gonna crashout b/c of the time I spent on this.
 
-![Training experiments](imagesjournal/colabscreenshot3.png)
+![Higher-accuracy YOLO confusion matrix](imagesjournal/confusionmatrixhighaccuracyv2ai.png)
 
 **Total Time Spent: 5 hours**
 
@@ -193,7 +193,7 @@ Since the bigger model actually worked, I spent most of today changing parameter
 
 Compared the runs and decided I'm sticking with normal object detection + the larger model instead of segmentation. Segmentation was cool but it used way more labeling time and didn't really give enough back. Now I have to get the model onto the raspberry pi/hailo which might be another problem.
 
-![Final model labels and comparison](imagesjournal/labels.png)
+![Final model detecting a small squirrel at 0.89 confidence](imagesjournal/368a1a86d78ef9c8.jpg)
 
 **Total Time Spent: 2.5 hours**
 
@@ -345,7 +345,7 @@ Connected the water side again and tested the AI trigger with it. I used short b
 
 Put/tested it in a more realistic spot instead of on my desk. Outside is WAY messier for the model. Leaves move, shadows change, and there are random shapes everywhere. I got a few weird detections so I wrote down what happened and started changing the confidence/trigger rules.
 
-![Outdoor strawberry area after testing](imagesjournal/squirrelareaiswetdirtmovedstrawberrypotaftermath.png)
+![Outdoor inference test with a detected squirrel and a harder missed squirrel](imagesjournal/201a80bafa36580d_jpg.rf.9528f0982323ccf59ca02f1b27a24ef8.jpg)
 
 **Total Time Spent: 2 hours**
 
@@ -353,7 +353,7 @@ Put/tested it in a more realistic spot instead of on my desk. Outside is WAY mes
 
 Changed the confidence threshold and how many frames it needs to see a squirrel before actually triggering. Too low = random stuff can set it off. Too high = it misses harder squirrels. I just tested a bunch of values until it was less annoying without making it useless.
 
-![False-positive testing](imagesjournal/screenshotlabelstudioinfp.png)
+![Low-confidence squirrel detection used for threshold tuning](imagesjournal/464e5f597927ed10.jpg)
 
 **Total Time Spent: 2 hours**
 
@@ -372,3 +372,11 @@ I think I'm almost done. I should've gotten the 3d printer. I could like 3d prin
 ![Nearly finished system](imagesjournal/fullsetupone.png)
 
 **total Time spent: 2 hours**
+
+# September 15: It actually caught one
+
+I actually caught a squirrel today. The annoying part is the camera/video code was kind of broken, so instead of saving a whole video clip when it detected the squirrel, it only took one photo right when it first saw it. So I only got a single image and not the full action, which is kind of sad, but at least it proves the system really detected a squirrel in the strawberry area. And my pump also accidently sprayed some water on my pi camera (hopefully it stills work or I'll have to fork out another 50 dollars) but thankfully I have a second one. Also the squirrels are starting to hibernate and squirrelling (or whatever htey do) away for the winter (they are getting fatter now), so there probably won't be that many more chances to test it. I'll probably stop here or mostly stop and call the project basically done. School work is getting heavier and heavier. Maybe I'll have time to expand it to different animals during winter break. I really (I mean like, REALLY) learned a whole heck lot in this experience.
+
+![Detected squirrel in the strawberry area from the final test](imagesjournal/finalcaughtsquirreltodayonlyphoto.png)
+
+**Total Time Spent: 0.75 hours**
