@@ -377,6 +377,6 @@ I think I'm almost done. I should've gotten the 3d printer. I could like 3d prin
 
 I actually caught a squirrel today. The annoying part is the camera/video code was kind of broken, so instead of saving a whole video clip when it detected the squirrel, it only took one photo right when it first saw it. So I only got a single image and not the full action, which is kind of sad, but at least it proves the system really detected a squirrel in the strawberry area. And my pump also accidently sprayed some water on my pi camera (hopefully it stills work or I'll have to fork out another 50 dollars) but thankfully I have a second one. Also the squirrels are starting to hibernate and squirrelling (or whatever htey do) away for the winter (they are getting fatter now), so there probably won't be that many more chances to test it. I'll probably stop here or mostly stop and call the project basically done. School work is getting heavier and heavier. Maybe I'll have time to expand it to different animals during winter break. I really (I mean like, REALLY) learned a whole heck lot in this experience. Super fun :), 5/5 would do it again even thought it was a bit frustrating at points.
 
-![Detected squirrel in the strawberry area from the final test](imagesjournal/finalcaughtsquirreltodayonlyphoto.png)
+![Detected squirrel in the strawberry area from the final test](imagesjournal/squirrelgetscaughtcaughtsquirrel.png)
 
 **Total Time Spent: 0.75 hours**
