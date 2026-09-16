@@ -1,4 +1,4 @@
-AI Squirrel Garden Deterrent
+# AI Squirrel Garden Deterrent
 
 Squirrels kept getting into the strawberries in my garden. Normal squirrel deterrents exist, but a lot of them are either always on, depend on motion sensors, or just kind of hope the squirrel gets annoyed enough to leave. I already had a Raspberry Pi 5 and some experience training YOLO models, so I decided to make something a little more specific: use AI to tell if the thing in the garden is actually a squirrel, then trigger a short burst of water.
 
