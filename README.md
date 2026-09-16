@@ -10,7 +10,7 @@ It did eventually work. On September 15, the system detected a real squirrel sit
 </p>
 
 
-What it does
+# What it does
 
 The final idea is pretty simple even though getting there wasn't:
 
@@ -30,7 +30,7 @@ I purposely added the multi-frame check and confidence threshold instead of firi
 
 
 
-The AI part
+# The AI part
 
 This was probably the biggest part of the project.
 
@@ -46,11 +46,15 @@ I relabeled basically the whole dataset with segmentation masks, which took much
 
 So I went back to the original detection dataset and used a larger model. That worked better almost immediately. The final detection setup got close to 80% mAP50-95, and the current training notebook uses YOLO11m with a larger input resolution so small squirrels keep more detail.
 
+<p align="center">
+  <img src="imagesjournal/screenshotlabelstudioimagesall.png" alt="Squirrel dataset in Label Studio" width="48%">
+  <img src="imagesjournal/screenshotsquirrel2segemetnation.png" alt="Segmentation labeling experiment" width="48%">
+</p>
 
 
 One of the more useful things I wrote along the way was a small dataset quality-control program. It shows each image with its YOLO box and lets me approve or reject it quickly instead of manually digging through folders. There were enough duplicates, bad labels, tiny squirrels, and random useless images that cleaning the dataset actually mattered.
 
-Training and deployment
+# Training and deployment
 
 Training was done in Google Colab, mainly because I could use an A100 instead of waiting forever on local hardware. The training notebook in this repository is set up around the path I ended up using:
 
@@ -68,7 +72,7 @@ Hailo compilation for Raspberry Pi inference
 
 The model has to be useful on the Pi, not just look good on a giant GPU. That was one reason I originally started with the smallest YOLO11 model. Eventually I found that going somewhat larger was worth it because the accuracy difference mattered more than I expected, especially for squirrels farther away.
 
-Hardware
+# Hardware
 
 The project uses a mix of normal computer hardware and very random parts I collected over the summer:
 
@@ -92,15 +96,15 @@ Water next to a Raspberry Pi is, unsurprisingly, not the greatest design combina
 
 
 
-Things I tried that did not make the final design
+# Things I tried that did not make the final design
 
 A bunch of this project was me making it more complicated, realizing why that was a problem, and then undoing it.
 
-Segmentation
+# segmentation
 
 This was the biggest failed detour. In theory, tracing the exact squirrel shape seemed better than a box. In practice, fur and tails are annoying to label consistently, occlusion makes the masks weird, and the improvement was too small. Normal object detection won.
 
-Two cameras + stereo depth
+# Two cameras + stereo depth
 
 For a while I wanted two cameras so I could estimate exactly how far away the squirrel was. I got two camera views working and researched stereo vision and Hailo depth models. Then I realized I was trying to run squirrel detection, depth inference, and two camera streams just to answer a question that mostly came down to "is there a squirrel in the area I care about?"
 
@@ -108,17 +112,17 @@ Cool idea. Probably unnecessary for this version.
 
 
 
-Arduino control
+# Arduino control
 
 I also tried adding an Arduino to control the physical hardware. After setting it up, I realized the Pi would have to talk to the Arduino so the Arduino could do something the Pi could already tell the control circuit to do. That lasted about one testing session.
 
-A super complicated aiming system
+# A super complicated aiming system
 
-I experimented with servos and aiming, but I eventually focused on reliably covering the strawberry area instead of immediately building a full AI water turret. The camera gives me the squirrel's position in the image; that does not magically mean the water lands at the exact same point in the real world.
+I experimented with servos and aiming, but I eventually focused on reliably covering the strawberry area instead of immediately building a full AI water turret. The camera gives me the squirrel's position in the image; that does not magically mean the water lands at the exact same point in the real world. Also on the actual real test, i realized that it doensn't matter if the water hits the squirrel, they still run away.
 
 That can be a future upgrade.
 
-Outdoor testing
+# Outdoor testing
 
 Testing inside was easy compared with testing outside.
 
@@ -134,29 +138,7 @@ On the final real test, the system detected a squirrel in the strawberry pots at
 
 By then squirrel activity around the garden was also starting to drop for the season, and school was getting busier, so this is basically where I decided to stop for now.
 
-Repository
-
-The repo is still partly a build log instead of a perfectly cleaned software package, which is intentional for now. The main pieces are:
-
-Anti-Squirrel-Defense/
-├── AI stuff/
-│   ├── images/
-│   └── squirrel_qc.py
-├── Python Notbooks for training/
-│   └── train_squirrel_yolo_colab_a100_rpi5_hailo version two.ipynb
-├── imagesjournal/
-├── JOURNAL.md
-└── README.md
-
-JOURNAL.md has the full build process from the original idea through the final outdoor test.
-
-AI stuff/squirrel_qc.py is the dataset review/cleanup tool.
-
-Python Notbooks for training/ contains the Colab training/export notebook.
-
-imagesjournal/ contains the photos, screenshots, model results, and all the random evidence that this took way more time than the finished device makes it look like.
-
-What I would change next
+# What I would change next
 
 If I keep working on this next season, the first thing I would fix is definitely the video recording. Catching the squirrel and then finding out I only saved one frame was painful.
 
@@ -176,6 +158,6 @@ make the physical wiring less prototype-looking.
 
 I also still kind of want the 3D printer I almost bought during the July sale. A custom enclosure would have made the hardware side much easier.
 
-Current status
+# Current status
 
 Basically done for this season. The detector works, the Raspberry Pi/Hailo setup can run the AI, the trigger system works with the pump, and I got a real squirrel detection in the garden. There are definitely things I would improve, but it got from "squirrels keep eating the strawberries" to an actual working AI + hardware system, which was the point.
