@@ -115,6 +115,11 @@ On the final real test, the system detected a squirrel in the strawberry pots at
 
 By then squirrel activity around the garden was also starting to drop for the season, and school was getting busier, so this is basically where I decided to stop for now.
 
+<p align="center">
+  <img src="Wiringdiagram.png" alt="Final squirrel detection in the strawberry area" width="78%">
+</p>
+
+
 # What I would change next
 
 If I keep working on this next season, the first thing I would fix is definitely the video recording. Catching the squirrel and then finding out I only saved one frame was painful.
