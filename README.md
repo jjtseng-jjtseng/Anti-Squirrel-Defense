@@ -72,29 +72,6 @@ Hailo compilation for Raspberry Pi inference
 
 The model has to be useful on the Pi, not just look good on a giant GPU. That was one reason I originally started with the smallest YOLO11 model. Eventually I found that going somewhat larger was worth it because the accuracy difference mattered more than I expected, especially for squirrels farther away.
 
-# Hardware
-
-The project uses a mix of normal computer hardware and very random parts I collected over the summer:
-
-Raspberry Pi 5 — main computer
-
-Raspberry Pi camera — watches the garden
-
-Hailo NPU / Raspberry Pi AI accelerator — runs the vision model
-
-Water pump + tubing — actual deterrent
-
-Separate power/battery hardware — the pump is not being powered straight from the Pi for fairly obvious reasons
-
-Cooling fan — the Pi + NPU got REALLY hot during longer tests
-
-Control wiring/electronics — lets the Pi trigger the pump
-
-Servos — used while experimenting with aiming the water system
-
-Water next to a Raspberry Pi is, unsurprisingly, not the greatest design combination. A lot of the physical work became figuring out how to keep airflow around the Pi/NPU while still protecting the electronics and letting the camera/tubing stick out where they needed to.
-
-
 
 # Things I tried that did not make the final design
 
