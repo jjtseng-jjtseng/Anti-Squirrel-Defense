@@ -135,6 +135,9 @@ make the physical wiring less prototype-looking.
 
 I also still kind of want the 3D printer I almost bought during the July sale. A custom enclosure would have made the hardware side much easier.
 
+# Note: 
+No pcb or 3d models were attached because no custom 3d print or pcbs were made. That is future work to allow work under all weather conditions.
+
 # Current status
 
 Basically done for this season. The detector works, the Raspberry Pi/Hailo setup can run the AI, the trigger system works with the pump, and I got a real squirrel detection in the garden. There are definitely things I would improve, but it got from "squirrels keep eating the strawberries" to an actual working AI + hardware system, which was the point.
