@@ -5,7 +5,9 @@ Squirrels kept getting into the strawberries in my garden. Normal squirrel deter
 The project ended up taking way longer than I expected because the AI was only one part of it (In fact, I don't know if I would've started the project if I've known it would take over a hundred hours) that I had to collect and clean a dataset, label everything, train multiple models, get one running on a Raspberry Pi with a Hailo accelerator, connect the camera and pump, deal with cooling/water being a terrible combination, and then actually test the thing outside.
 
 It did eventually work. On September 15, the system detected a real squirrel sitting directly in the strawberry area with 0.92 confidence. The video-saving code decided to break at basically the worst possible time, so I only got one frame instead of the whole clip, but at least I got proof that the actual system saw it.
-
+<p align="center">
+  <img src="imagesjournal/squirrelgetscaughtcaughtsquirrel.png" alt="Final squirrel detection in the strawberry area" width="78%">
+</p>
 
 
 What it does
