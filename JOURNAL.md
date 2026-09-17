@@ -9,6 +9,8 @@ created_at: "2026-05-01"
 
 Squirrels got into the strawberries in my garden--normal defenses don't work--so maybe I should do something about it.
 
+NOTE: Everything software related was cut, to reduce the time from 140 to 27 hours. Was told to do this by Forge reviewer. 
+
 ![Project motivation](imagesjournal/strawberry.jpg)
 
 **Total Time Spent: 0.25 hours**
@@ -21,8 +23,11 @@ I was busy with an Algerbra test. When I was ready, I found out that there were 
 
 **Total Time Spent: 0.5 hours**
 
+
+
 # June 25: raspberry pi + npu stuff
 
+Can review original journal for everything that happened inbetween. context: I finished training the ai model.
 It got REALLY hot with the raspberry pi, especially when I left stuff running for a while. I installed a custom fan on it because I'd rather not cook the thing before the actual project is even done.
 
 ![Raspberry Pi cooling setup](imagesjournal/pi_cooler.png)
@@ -127,7 +132,10 @@ I think I'm almost done. I should've gotten the 3d printer. I could like 3d prin
 
 # September 15: It actually caught one
 
+NOTE: Everything software related was cut, to reduce the time from 140 to 27 hours. Was told to do this by Forge reviewer. All the coding/software portions are no longer inside.
+
 I actually caught a squirrel today. And my pump also accidently sprayed some water on my pi camera (hopefully it stills work or I'll have to fork out another 50 dollars) but thankfully I have a second one.
+
 
 ![Detected squirrel in the strawberry area from the final test](imagesjournal/squirrelgetscaughtcaughtsquirrel.png)
 
